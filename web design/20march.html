@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            text-align: center;
+            padding: 20px;
+            background-color: aliceblue;
+
+        }
+        ul{
+            overflow: hidden;
+            background-color: bisque;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 10px;
+            
+        }
+        .content{
+            display:none;
+            position: relative;
+            background-color: brown;
+            width: 30px;
+
+        }
+        span{
+            display: block;
+        }
+        span:hover{
+            display: block;
+            background-color: brown;
+            
+        }
+        .dropdown{
+            display: inline-block;
+            position: absolute;
+            
+        }
+        .dropdown:hover .content{
+            display: block;
+            padding: 5px;
+            background-color: aquamarine;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        hello header
+    </div>
+
+    <ul>
+        <li>list</li>
+        <li>list2</li>
+        <li class="dropdown">list3
+            <div class="content">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+
+
+            </div>
+        </li>
+    </ul>
+    
+</body>
+</html>

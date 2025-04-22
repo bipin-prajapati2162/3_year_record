@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            text-align: center;
+            padding: 30px;
+            background-color: azure;
+        }
+        .navigation{
+            width: 100%;
+            background-color: rgb(206, 17, 17);
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+            height: auto;
+
+        }
+        span{
+            float: left;
+            padding: 10px;
+            color:blueviolet;
+            display: inline-block;
+            background-color: rgb(230, 97, 9);
+            border-left: solid;
+            border-radius: 7px;
+            border-color: rgb(230, 97, 9);
+            
+            
+
+        }
+        .content{
+            display: none;
+            position: relative;
+            background-color: #f9f9f9;
+            min-width: 16px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            
+        }
+        .span1:hover .content{
+            display: block;
+        }
+        .span2:hover .content{
+            display: block;
+        }
+        li{
+            list-style:none;
+        }
+        .first{
+            float: left;
+            width: 20%;
+            height: 100%;
+            padding: 16px;
+            line-height: 4;
+            overflow: hidden;
+            background-color: antiquewhite;
+        }
+        .second{
+            float: left;
+            height: 100%;
+            width: 50%;
+line-height: 4;
+            padding: 16px;
+            overflow: hidden;
+background-color:lime;
+
+        }
+        .third{
+            width: 20%;
+            height: 100%;
+            padding: 16px;
+            float: right;
+            background-color: bisque;
+            overflow: hidden;
+            line-height: 3;
+
+
+        }
+        .down{
+            
+padding:20px;
+margin-top:1%;
+            
+            
+        }
+.row::after{
+content:"";
+display:table;
+clear:both;
+}
+     
+    </style>
+</head>
+<body>
+    <div class="header">
+         I AM HEADER
+    </div>
+   <div class="navigation">
+    <span class="span1">list1
+    <div class="content">
+        <li>cont1</li>
+        <li>cont2</li>
+        <li>cont3</li>
+        <li>cont4</li>
+        <li>cont5</li>
+    </div>
+</span>
+    <span class="span2">list2
+        <div class="content">
+            <li>cont1</li>
+            <li>cont2</li>
+            <li>cont3</li>
+        </div>
+    </span>
+   </div>
+<div class="row">
+   <div class="first">
+    <li class="first11">link</li>
+    <li class="first11">link</li>
+    <li class="first11">link</li>
+    <li class="first11">link</li>
+    <li class="first11">link</li>
+    <li class="first11">link</li>
+    
+   </div>
+
+   <div class="second">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias perspiciatis quam, eius est aliquid quaerat dolor obcaecati, maiores necessitatibus nemo, veritatis dignissimos ratione temporibus quisquam voluptatibus dolore vitae. Rerum, eum illo.
+   </div>
+
+   <div class="third">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis eveniet dignissimos praesentium.
+   </div>
+    
+   <div class="down">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tenetur hic sunt quis, officia itaque fugit rem ad voluptatem libero ullam, minus iusto dignissimos laudantium, temporibus doloremque culpa vero odit?
+   </div>
+</div>   
+</body>
+</html>
