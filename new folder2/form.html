@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(20, 34, 33);
+            color: white;
+
+        }
+        div.mainbody{
+            border: solid rgb(252, 251, 251) 3px;
+            
+            border-radius: 5%;
+            align-items: center;
+            align-content: center;
+            height: auto;
+            width: 50%;
+            margin-left: 30%;
+            display: inline-block;
+            
+            
+        }
+        .input,select{
+            position: absolute;
+            right:190px;
+             
+            background: transparent;    
+            color: white;
+            border: solid 1px rgba(243, 242, 242, 0.521) ;
+            float: left;
+            
+            
+            
+        }
+        h1{
+            text-align: center;
+            text-shadow: rgb(252, 251, 249) 1px 10px 10px;
+            color: white;
+
+        }
+        label{
+            display: inline;
+            width: 25%;
+            
+
+        }
+        option{
+            
+            background-color: rgb(20, 34, 33);
+        }
+        .mainbody:hover{
+            box-shadow: -1px 12px 19px 20px rgba(252, 251, 250, 0.733);
+            
+        }
+        .input:hover, select:hover{
+            box-shadow: rgb(253, 253, 250) 1px 10px 10px;
+
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:transparent;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+        background-color: #111;
+        text-shadow: rgb(252, 251, 249) 1px 10px 10px;
+        }
+        li {
+            border-right: 1px solid #bbb;
+        }
+
+        li:first-child {
+            border-right: none;
+        }
+        li:last-child{
+            border-right: none;
+        }
+
+        
+        
+    </style>
+    
+</head>
+<body>
+    <ul>
+    
+    <li><img src="https://www.mangalayatan.in/admission-open/images/logo.png" height="50"></li>
+
+    <li><div class="top"><a href="https://www.mangalayatan.in/" >HOME </a></div></li>
+    <li><div class="top"><a href="https://www.mangalayatan.in/contact-us-2/"> CONTACT US</a></div></li>
+    </div>
+    <li style="float:right;"><a href="">ABOUT US</a></li>
+    </ul>
+    <hr>
+    <div class="mainbody">
+        <h1>STUDENT FORM</h1>
+        <form>
+        <div class="row">
+            <label for="email">Email</label>
+            <input class="input" name="email" id="mail">
+            <br><br>
+            </div>
+        <div class="row">
+            <label for="name">Name</label>
+            <input  class="input" type="text" name="name" id="name">
+            <br><br>
+        </div>
+        <div class="row">
+            <label for="enrollment">Enrollment</label>
+            <input  class="input" type="text" name="Enrolment id="enrollment" >
+            <br><br>
+        </div>
+        <div class="row">
+            <label for="Course">Course</label>
+            <input  class="input" type="text" name="Course" id="Course">
+            <br><br>
+        </div>
+        <div class="row">
+            <label for="semester">Semester</label>
+            <select id="semester" name="semester">
+                <option value="semester 1">semester 1</option>
+                <option value="semester 2">semester 2</option>
+                <option value="semester 3">semester 3</option>
+                <option value="semester 4">semester 4</option>
+              </select>
+              <br><br>
+            </div>
+            <div class="row">
+            <label for="F.name">Father's Name</label>
+            <input  class="input" type="text" name="F.name" id="F.name">
+            <br><br>
+        </div>
+        <div class="row">
+            <label for="name">Gender</label><br>
+            <div class="gender">
+            <input type="radio" id="html" name="Gender" value="Male">
+             <label for="male">Male</label>
+             <input type="radio" id="Female" name="Gender" value="Female">
+             <label for="css">Female</label>
+             <input type="radio" id="other" name="Gender" value="other">
+             <label for="other">other</label>
+            <br><br>
+        </div>
+        <div class="row">
+        <label for="address">Addresss</label>
+        <input  class="input" type="text" name="address" id="address">
+        <br><br>
+    </div>
+    <div class="row">
+        <label for="picode">Pincode</label>
+        <input class="input" type="text" name="pincode" id="pincode">
+        <br><br>
+    </div>
+    <div class="row">
+        <label for="city">City</label>
+        <input class="input" type="text" id="city" name="city">
+        <br><br>
+    </div>
+    <div class="row">
+        <label for="state">State</label>
+        <input class="input" type="text" id="state" name="state">
+        <br><br>
+    </div>
+
+        </form>
+    </div>
+</body>
+</html>
